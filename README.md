@@ -1,9 +1,9 @@
 # ubuntu-buildah
 
 ## Introduction
-Based on the fedora ContainerFile[https://github.com/containers/image_build/blob/main/buildah/Containerfile] i've rewritten the Dockerfile to an ubuntu based image
+Based on the fedora [ContainerFile](https://github.com/containers/image_build/blob/main/buildah/Containerfile) i've rewritten the Dockerfile to an ubuntu based image
 
-this in combination of https://github.com/containers/podman/discussions/18944#discussioncomment-6243939 to add correct Environment variables
+this in combination with info on this [discussion](https://github.com/containers/podman/discussions/18944#discussioncomment-6243939) to add correct (?) Environment variables
 
 ## build base image
 
