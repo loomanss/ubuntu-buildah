@@ -2,8 +2,8 @@
 
 ## Introduction
 Based on the fedora [ContainerFile](https://github.com/containers/image_build/blob/main/buildah/Containerfile) i've rewritten the Dockerfile to an ubuntu based image
-
 this in combination with info on this [discussion](https://github.com/containers/podman/discussions/18944#discussioncomment-6243939) to add correct (?) Environment variables
+see also the buildah [README.md](https://github.com/containers/image_build/tree/main/buildah)
 
 ## build base image
 
@@ -26,6 +26,16 @@ podman run -e BUILDAH_FORMAT=docker -e BUILDAH_ISOLATION=chroot -e STORAGE_DRIVE
 ```shell
 cd /src/
 cd test_files 
-buldah build -t test:latest .
+buildah build -t test:latest .
 buildah images
 ```
+
+
+## TO-DO
+
+how to use container with rootless user 'build' 
+
+```shell
+podman -u build ....
+```
+
